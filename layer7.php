@@ -10,17 +10,11 @@ $mode = $_GET['mode'];
 
 
 //Layer 7 Methods
-if ($method == "HTTP-BROWSER") { $method = "BROWSER"; $mode = "GET"; $port = 80; }
-if ($method == "HTTP-ENGINE") { $method = "ENGINE"; $mode = "GET"; $port = 80; }
-if ($method == "HTTPGET") { $method = "REQUEST"; $mode = "GET"; $port = 80; }
-if ($method == "HTTPPOST") { $method = "REQUEST"; $mode = "POST"; $port = 80; }
-if ($method == "HTTPHEAD") { $method = "REQUEST"; $mode = "HEAD"; $port = 80; }
-if ($method == "HTTPSGET") { $method = "HTTPS"; $mode = "GET"; $port = 80; }
-if ($method == "HTTPSPOST") { $method = "HTTPS"; $mode = "POST"; $port = 80; }
-if ($method == "HTTPSHEAD") { $method = "HTTPS"; $mode = "HEAD"; $port = 80; }
+if ($method == "HTTPGET") { $method = "SOCKET"; $mode = "GET" }
+if ($method == "HTTPPOST") { $method = "SOCKET"; $mode = "POST" }
 
 //API Link
-$Link = "https://darlingapi.com/?key=YOURAPIKEY&host=$host&port=$port&time=$time&method=$method&mode=$mode";
+$Link = "https://darlingapi.com/?key=YOURAPIKEY&host=$host&port=80&time=$time&method=$method&mode=$mode";
 
 try 
 {  
