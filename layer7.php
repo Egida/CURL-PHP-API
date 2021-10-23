@@ -6,6 +6,7 @@ $host = $_GET['host'];
 $port = $_GET['port'];
 $time = $_GET['time'];
 $method = $_GET['method'];
+$mode = $_GET['mode'];
 
 
 //Layer 7 Methods
