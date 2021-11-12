@@ -10,8 +10,8 @@ $mode = $_GET['mode'];
 
 
 //Layer 7 Methods
-if ($method == "HTTP-GET") { $method = "SOCKET"; $mode = "GET" }
-if ($method == "HTTP-POST") { $method = "SOCKET"; $mode = "POST" }
+if ($method == "HTTP-SPAM") { $method = "SOCKETv2"; $mode = "GET" }
+if ($method == "HTTP-BYPASS") { $method = "SOCKETv3"; $mode = "GET" }
 
 //API Link
 $Link = "https://darlingapi.com/?key=YOURAPIKEY&host=$host&port=80&time=$time&method=$method&mode=$mode";
